@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500; 600;700; 800; 900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+
+    line-height: 64px;
+
+    color: #222;
+
+}
+
+h2 {
+
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+
+}
+
+h4 {
+
+    font-size: 20px;
+
+    color: #222;
+}
+
+
+
+h6 {
+
+    font-weight: 700;
+
+    font-size: 12px;
+
+}
+
+p {
+
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+
+}
+
+.section-m1 {
+
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80 px;
+    background: #8f78a8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#header a {
+    margin-left: 20px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #b9ad26;
+
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #b9ad26;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#main {
+    background-image: url("C:\Users\balaj\OneDrive\Pictures\main class image.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+
+    background-position: top 25% right 0;
+}
+
+#hero {
+    background-image: url("http://www.liveenhanced.com/wp-content/uploads/2018/04/virat-kohli-new-hairstyle-9.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: #DB9122;
+}
+
+#hero button {
+    background-image: url("https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/button.png?raw=true");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    color: #F04B0E;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #050505;
+    background-color: #9383BA;
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.products {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.product-item h3 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+}
+
+.product-item p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    color: #555;
+}
+
+.product-item .btn {
+    display: inline-block;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.product-item .btn:hover {
+    background-color: #e5533f;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/564x/be/e6/df/bee6df6a2e76d5ec6f905f8029d24b20.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #ef3636;
+
+}
+
+#banner .btn {
+    background-color: #ff6347;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+#banner .btn:hover {
+    background-color: #e5533f;
+    transform: scale(1.1);
+}
+
+#banner-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/564x/19/3d/b0/193db025d42712b6be8901c15af7c962.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/564x/f5/74/4c/f5744c369fdb0e08bbdaeaeb33ce15b9.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/564x/f5/9e/f5/f59ef5346ae017646cbf5150e909f3f9.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/564x/ae/d0/40/aed0408855402b98978c962832e3e0b7.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner-1 h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner-1 h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner-1 h2 span {
+    color: #ef3636;
+
+}
+
+#banner-2 h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner-2 h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner-2 h2 span {
+    color: #ef3636;
+
+}
+
+#banner-3 h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner-3 h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner-3 h2 span {
+    color: #ef3636;
+
+}
+
+#banner-4 h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner-4 h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner-4 h2 span {
+    color: #ef3636;
+
+}
+
+#banner-1 .btn {
+    background-color: #A9D797;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+#banner-1 .btn:hover {
+    background-color: #e5533f;
+    transform: scale(1.1);
+}
+
+#banner-2 .btn {
+    background-color: #A9D797;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+#banner-2 .btn:hover {
+    background-color: #e5533f;
+    transform: scale(1.1);
+}
+
+#banner-3 .btn {
+    background-color: #A9D797;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+#banner-3 .btn:hover {
+
+    background-color: #e5533f;
+    transform: scale(1.1);
+}
+
+#banner-4 .btn {
+    background-color: #A9D797;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+#banner-4 .btn:hover {
+    background-color: #e5533f;
+    transform: scale(1.1);
+}
+
+
+
+
+#newsletter {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#newsletter .nextext h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#newsletter .nextext p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#newsletter .nextext span {
+    font-weight: bold;
+    color: #ff6347;
+}
+
+#newsletter .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#newsletter .form input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#newsletter .form input:focus {
+    border-color: #ff6347;
+}
+
+#newsletter .form button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    background-color: #171465;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#newsletter .form button:hover {
+    background-color: #7874E2;
+    transform: scale(1.05);
+}
+
+#newsletter .form button:active {
+    background-color: #d04a31;
+}
+
+@media (max-width: 768px) {
+    #newsletter .form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #newsletter .form input,
+    #newsletter .form button {
+        width: 100%;
+    }
+}

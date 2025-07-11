@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .logo img {
+            max-height: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e1e150;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 700px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .container form {
+            width: 100%;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            text-align: center;
+            color: #e1e150;
+            margin-bottom: 10px;
+        }
+
+        .container h5 {
+            text-align: center;
+            font-size: 1rem;
+            color: #f1f1f1;
+            margin-bottom: 20px;
+        }
+
+        .container input,
+        .container textarea {
+            width: calc(50% - 20px);
+            padding: 10px 15px;
+            margin: 10px 10px 20px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .container input:focus,
+        .container textarea:focus {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.02);
+        }
+
+        .container textarea {
+            width: calc(100% - 20px);
+            min-height: 80px;
+            resize: none;
+        }
+
+        ::placeholder {
+            color: #ddd;
+            font-weight: 300;
+        }
+
+        .container #button {
+            width: 150px;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #e1e150, #f9d423);
+            color: #333;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .container #button:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #f9d423, #e1e150);
+        }
+
+        @media (max-width: 768px) {
+            .container input {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a class="logo" href="#">
+        <img src="C:\Users\HP\OneDrive\Desktop\project photos\logo.jpg" alt="Logo">
+    </a>
+    <nav class="navigation">
+        <a href="home.html">Home</a>
+    </nav>
+</header>
+
+<div class="container">
+    <form>
+        <h1>Contact Us</h1>
+        <h5>Share your valuable suggestions with us! So we can provide you with better service.</h5>
+        <input type="text" id="firstname" placeholder="First Name" required>
+        <input type="text" id="lastname" placeholder="Last Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="mobile" placeholder="Mobile" required>
+        <textarea placeholder="Type Your Message Here..." required></textarea>
+        <input type="submit" value="Send" id="button">
+    </form>
+</div>
+</body>
+</html>
